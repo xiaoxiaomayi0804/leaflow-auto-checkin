@@ -31,10 +31,10 @@ jobs:
     - name: Run auto checkin
       env:
         LEAFLOW_ACCOUNTS: ${{ secrets.LEAFLOW_ACCOUNTS }}
-        LEAFLOW_EMAIL: xiaomayi0804@gmail.com  ${{ secrets.LEAFLOW_EMAIL }}
-        LEAFLOW_PASSWORD: 123123123  ${{ secrets.LEAFLOW_PASSWORD }}
-        TELEGRAM_BOT_TOKEN: 8336262406:AAE-07vZdOLR7ySnW38w_XdDP057j9F8bT8  ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        TELEGRAM_CHAT_ID: 668014216  ${{ secrets.TELEGRAM_CHAT_ID }}
+        LEAFLOW_EMAIL: ${{ secrets.LEAFLOW_EMAIL }}
+        LEAFLOW_PASSWORD: ${{ secrets.LEAFLOW_PASSWORD }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         GITHUB_ACTIONS: true
       run: |
         python leaflow_checkin.py
